@@ -7,3 +7,4 @@ Course materials for course at Unicamp: Empirical and Theoretical Approaches to 
 ###(2) Estimating male components of fitness
 ###(3) Estimating fitness in clonal plants
 Project started on 20 February 2017
+Checking whether SSH works
