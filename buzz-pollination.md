@@ -49,7 +49,20 @@ Thus, if you keep frequency constant, an increase in amplitude will result in a 
 ##1. Analysis using *Audacity*
 The analysis of acoustic signals can be done with a variety of software. The software that most people use has usually been developed for the music industry, but it contains the necessary tools to describe sounds
 
+Here we will use a freely available software called *Audacity*. 
 
+**The goal of this exercise is to give you a brief tutorial for analysing bee buzzes, and characterise their basic properties.**
+
+###1.1 Download and install Audacity in your computer
+You can donload Audacity 2.1.2 from: [http://www.audacityteam.org](http://www.audacityteam.org)
+
+###1.2 Adjust Audacity settings
+
+1. Open *Audacity*
+2. Import audio file (e.g. 'test.wav')
+3. Once the file is open, click to the left of the **tracks** to select (highlight) the recording. This displays the recoding in **waveform**.
+	![image](ss-1.png)2.	Go to: Edit → Preferences → Spectrograms. Select: size 8192; type ‘Hamming’; maximum frequency 3000; grayscale.3.	Click the small upside-down black triangle to the right of the filename. Select ‘Spectrogram’. This will display the recording as a **spectrogram**.
+	![spectrogram](ss-2.png)4.	Go to: Effect → High Pass Filter. Select: rolloff 12 db; cutoff 100 Hz. 5.	Click tracks to remove highlighting.6.	Drag the bottom of the tracks downward so that they fill the screen.
 
 ##2. Machine learning
 
