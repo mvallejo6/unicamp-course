@@ -25,9 +25,33 @@ Vibrations can be experimentally studied in two ways:
 
 #Acoustic analysis of buzz pollination
 
+The vibrations produced by the bee, are propagated through the air, producing audible sounds. These sounds are our indirect way to characterise the vibrations produced by the bee. Sounds are waves that propagate through the air or other media. The main charactersitics of waves are:
 
-##Machine learning
+1. Wavelength: The distance between peaks or throughs
+2. Period: The amount of time that takes a whole wave to pass through a fixed point
+3. **Amplitude**: The height of a wave
+4. **Frequency**: The number of waves that pass through a fixed point per unit time. Usually measured in cycles (number of waves) per second or **Hertz (Hz)**.
+5. **Acceleration**: The maximum velocity of a wave passing through a fixed point.
 
+![waves](http://theory.uwinnipeg.ca/mod_tech/img169.gif)
+Figure 2. Main charactersitics of waves. From: theory.uwinnipeg.ca
+
+Because pollen released from anthers is a function of the amount of energy transmitted from the bee to the stamen, we will focus on three main characteristics of sonication: (1) Amplitude/Acceleration, (2) Frequency, and (3) Duration (the amount of time spent buzzing).
+
+Amplitude and acceleration are related to each other. Specifically:
+
+	a_max = A (2 pi f)^2
+
+Where *a_max* is maximum acceleration, *A* is amplitude in meters, and *f* is frequency in Hz.
+
+Thus, if you keep frequency constant, an increase in amplitude will result in a proportional increase in acceleration. 
+
+##1. Analysis using *Audacity*
+The analysis of acoustic signals can be done with a variety of software. The software that most people use has usually been developed for the music industry, but it contains the necessary tools to describe sounds
+
+
+
+##2. Machine learning
 
 In 2015, a Slovenian data scientist [Bostjan Kalusza](http://bostjankaluza.net/classifying-animal-sounds/) and his colleagues, developed a new approach at analysing buzzing sounds. They used machine learning techniques to train a computer program to recognise some of the main European species of bumblebees. The paper can be found [here](http://www.tandfonline.com/doi/abs/10.1080/09524622.2016.1190946).
 
@@ -46,10 +70,10 @@ To try this automatic recognition software, follow these steps:
 4. The result will we a list of candidate species as identified by the machine-learning algorithm in rank order.
 
 ```
-Did it work?
 What are the advantages and limitations of this automatic recognition approach?
 How would you build up this system?
 Is this a useful tool for assessing levels of biodiversity?
+What are the advantages and limitations of this automatic recognition approach?
 ```
 
 ---
