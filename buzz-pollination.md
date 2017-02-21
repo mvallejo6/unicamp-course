@@ -53,16 +53,25 @@ Here we will use a freely available software called *Audacity*.
 
 **The goal of this exercise is to give you a brief tutorial for analysing bee buzzes, and characterise their basic properties.**
 
-###1.1 Download and install Audacity in your computer
+###1.1 Download and install *Audacity* in your computer
 You can donload Audacity 2.1.2 from: [http://www.audacityteam.org](http://www.audacityteam.org)
 
-###1.2 Adjust Audacity settings
+###1.2 Adjust *Audacity* settings
 
 1. Open *Audacity*
 2. Import audio file (e.g. 'test.wav')
+3. Clicking the space bar will start playing the audio file. To pause it press the space bar again.
 3. Once the file is open, click to the left of the **tracks** to select (highlight) the recording. This displays the recoding in **waveform**.
 	![image](ss-1.png)2.	Go to: Edit → Preferences → Spectrograms. Select: size 8192; type ‘Hamming’; maximum frequency 3000; grayscale.3.	Click the small upside-down black triangle to the right of the filename. Select ‘Spectrogram’. This will display the recording as a **spectrogram**.
-	![spectrogram](ss-2.png)4.	Go to: Effect → High Pass Filter. Select: rolloff 12 db; cutoff 100 Hz. 5.	Click tracks to remove highlighting.6.	Drag the bottom of the tracks downward so that they fill the screen.
+	![spectrogram](ss-2.png)4.	Go to: Effect → High Pass Filter. Select: rolloff 12 db; cutoff 100 Hz. If you are working on a MAC you may have to follow a different path to adjust these settings.
+5. If your audio was recorded in stereo (e.g., with the H4 Zoom Recorder) you will see the two channels of the audio. To simplify things we will analyse only one channel. To do this, go to the inverted black triangle to the right of the file name, choose *Split Stero to Mono*, and then close the bottom panel. You can stretch out the Spectrogram area using the mouse to fill your screen.
+
+###1.3 Analysis
+Now that you have the audio file in a format that we can analyse, the next step is to select a section of the file that contains a clear buzz (e.g., a flight buzz or a feeding sonication). You should conduct the analyses below separately for each buzz. For each separate buzz, carry out the following steps.
+1.	Highlight the buzz using the mouse. Make sure to include only the buzz you want to analyse, and use the zoom function if needed for increased accuracy. 2.	Go to: `Analyze → Plot Spectrum`. This will plot the **frequency spectrum** for the portion of the recording you highlighted. The analysis is much simpler if you focus on clear recordings without background noise.
+3. Select: `algorithm ‘Spectrum’`;  `function ‘Hamming window’`; `size 8192`; `axis ‘Log frequency’`.
+	The `size` value is somewhat subjective. We have found that values between **1024** and **8192** work in different situations. But remember you must use consistent setting for all the analysis in your project.3.	Mouse over the highest peak after 50-100 Hz (the signal below 50 Hz is most likely background noise). **The peak frequency and corresponding amplitude appears beneath the graph**. Record these figures in a spreadsheet, making sure to note what type of behaviour they refer too (flight or sonication), the identity of the bee, and other relevant experimental data.
+4. To account for variation between buzzes and experimental error, you should measure multiple buzzes per bee per behaviour.![spectrum](ss-3.png)
 
 ##2. Machine learning
 
