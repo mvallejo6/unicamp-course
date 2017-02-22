@@ -104,6 +104,18 @@ Is this a useful tool for assessing levels of biodiversity?
 What are the advantages and limitations of this automatic recognition approach?
 ```
 
+#Assignment
+
+**Objective:** To build a library of flight and feeding buzzes, and analyse the types of vibrations produced by different bee sppecies.
+
+1. Work in groups (2-4 people per group)
+2. Go out and record bee buzzes using a hand-held microphone. You can use your mobile phone microphone if you wish. Remember to avoid background noise as much as possible. Even light sounds in the background will complicate the analysis.
+3. Remember to record the species of bee and the type of flower being visited. 
+3. Bring back your recordings to the lab, and analyse them using the methodology described above.
+4. Record the frequency, amplitude and duration of the buzzes of each species of bee you sample.
+5. Analyse your results by producing tables or figures of your main findings.
+
+
 ---
 ###Glossary
 
