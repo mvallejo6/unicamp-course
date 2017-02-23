@@ -34,7 +34,7 @@ Vital rates (survivorship, growth or transition rates, and fertility) are calcul
 ###4. Building a projection matrix
 In this step you use the class-specific vital rates obtained from the demographic model to build a projection matrix.
 
-  $ A  $
+
   
   
 
