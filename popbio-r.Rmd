@@ -2,7 +2,9 @@
 title: "Population Projection Matrix Models in R"
 author: "Mario Vallejo-Marin"
 date: "23/02/2017"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -15,8 +17,65 @@ Here we will use the `library(popbio)` to analyse population projection models. 
 
 `popbio` also contains functions to calculate vital rates and construct projection matrices from raw census datas, as is typical of plant demography studies.
 
-Firs load the library:
+First load the library:
 
 ```{r load popbio, echo=TRUE}
 library(popbio)
 ```
+
+### Building a projection matrix
+
+Once you have calculated the demographic rates of **survival**, **growth or transition rates**, and **fertility**, you can build a projection matrix.
+
+A typical matrix in which there are three stages (e.g., seedling, juvenile, and adult), looks like this:
+
+$$\mathbf{A} = \left[\begin{array}
+{rrr}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{array}\right]
+$$
+
+where the $a$ represent transition probabilities. \*The transition rates represent the movement of the **j_th column** stage to the **i_th row** stage $P_{ij}$.
+
+In an organism where there are three pre-reproductive stages, and one reproductive stage, the projection matrix $A$ may look like this:
+
+$$\mathbf{A} = \left[\begin{array}
+{rrrr}
+P_{11} & 0 & 0 & F_4 \\
+P_{21} & P_{22} & P_{23} & 0\\
+0 & P_{32} & P_{33} & 0\\
+0 & 0 & P_{43} & P_{44}
+\end{array}\right]
+$$
+where $P$ represent the transition probabilities between stages $P_{ij}$ or within a stage $P_{ii}$. The element $F$ is reserved for *reproduction*. A matrix entry of zero indicates that the transition does not occur.
+
+To build the matrix you need to combine the vital rates to generate each matrix element, where:
+
+ - $s_j$ is the survival rate of class $j$
+  - $f_j$ is the fertility rate for class $j$
+   - $g_{ij}$ is the probability that an individual in class $j$ in this census makes the transition to class $i$
+
+###An example with clonal *Mimulus*
+Here we will use a recent example of estimating population growth rate in *Mimulus* populations reproducting both sexually and clonally. This study was conducted by Megan Peterson and colleagues:
+
+[Peterson ML, Kay KM, Angert AL (2016) The scale of local adaptation in *Mimulus guttatus*: comparing life history races, ecotypes, and populations. *New Phytologist*, 211, 345–356.](Peterson_et_al_2016.pdf)
+
+The general life cycle of *Mimulus* is shown here:
+![life cycle graph](life-cycle.png) 
+**Figure**. Life cycle graph of *Mimulus*. Grey arrows indicate transitions for annuals, and grey+black are transitions for perennials. From Peterson et al. (2016).
+
+The vital rates for the life cycle graph are given below.
+
+$$\begin{array}
+{cccc}
+ & Seed_t & Seedling_t & Rosette_t \\
+Seed_{t+1} & D(1-G) & FOA(1-G) & FOA(1-G) \\
+Seedling_{t+1} & DG & FOAG & FOAG  \\
+Rosette_{t+1} & 0 & SR & SR 
+\end{array}
+$$
+
+For a definition of the parameters, see Peterson et al. (2016).
+
