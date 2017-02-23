@@ -1,0 +1,22 @@
+---
+title: "Population Projection Matrix Models in R"
+author: "Mario Vallejo-Marin"
+date: "23/02/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+## Analysis with *POPBIO*
+
+Here we will use the `library(popbio)` to analyse population projection models. *popbio* is an package that implements the equations from Caswell (2001), and Morris and Doak (2002) to study matrix populations models.
+
+`popbio` also contains functions to calculate vital rates and construct projection matrices from raw census datas, as is typical of plant demography studies.
+
+Firs load the library:
+
+```{r load popbio, echo=TRUE}
+library(popbio)
+```
