@@ -34,6 +34,13 @@ Vital rates (survivorship, growth or transition rates, and fertility) are calcul
 ###4. Building a projection matrix
 In this step you use the class-specific vital rates obtained from the demographic model to build a projection matrix.
 
+For this, we will use the `R` package `popbio`.
+
+The handout for using `popbio` is provided in a separate document that you can access by [clicking here](popbio-r.html).
+
+
+
+
 
   
   
