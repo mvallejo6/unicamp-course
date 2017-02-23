@@ -26,8 +26,16 @@ This is the first step in building a projection matrix. It requires following ma
 This is a key step, as all the other analyses rest in getting good demographic data. Individuals studied should be representative of the population. The marked individuals should be sampled at regular intervals (e.g., over a one-year interval). In some cases, it may be necessary to census individuals more than once a year. For example, we may want to distinguish summer and winter survival).
 
 ###2. Establishing classes of individuals
-The first step is to decide whether to classify individuals by age, size or stage. You can also combine them (1-year old seedling, 2-year old seedling). The classification depends on biological information about the organism (e.g., does it make more sense to classify plants by age or size?), and practicality. Alternatively, you can use statistical analyses to identify state variables that best predict differences in vital rates among individuals (see page 187 of M&D2002).
+One must decide whether to classify individuals by age, size or stage. You can also combine them (1-year old seedling, 2-year old seedling). The classification depends on biological information about the organism (e.g., does it make more sense to classify plants by age or size?), and practicality. Alternatively, you can use statistical analyses to identify state variables that best predict differences in vital rates among individuals (see page 187 of M&D2002).
 
 ###3. Estimating vital rates
+Vital rates (survivorship, growth or transition rates, and fertility) are calculated by following the fate of individuals from one census to the next. Vital rates can be calculated by directly comparing numbers of individuals in two censuses, or by using regression models.
+
+###4. Building a projection matrix
+In this step you use the class-specific vital rates obtained from the demographic model to build a projection matrix.
+
+  $ A  $
+  
+  
 
 
