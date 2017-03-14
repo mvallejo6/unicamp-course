@@ -9,7 +9,16 @@ Notes for using *Markdown*, *pandoc*, *Git*, *GitHub*.
 1. Create *Markdown* text document with extension `.md`. This can be done in a text editor (terminal) or in a program such as [MacDown](https://macdown.uranusjr.com)
 2. An `.md` document will be automatically rendered as html in GitHub. 
 3. Alternatively you can render an `.md` document as HTML either by exporting as HTML from *MacDown*, or by using `pandoc` from the terminal. For example:
-	`pandoc --from markdown --to html preliminaries.md --output preliminaries.html`
+
+`pandoc --from markdown --to html preliminaries.md --output preliminaries.html`
+
+or
+
+`pandoc --from markdown --to latex preliminaries.md --output preliminaries.pdf`
+
+And to get a Word document:
+`pandoc --from markdown --to docx buzz-pollination.md --output buzz2.docx`
+
 
 ##Creating and working with repository in GitHub
 

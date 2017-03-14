@@ -1,4 +1,6 @@
-Unicamp Course. March 2017. Mario Vallejo-Marin.
+###Unicamp Course. 20-22 March 2017 
+### Mario Vallejo-Marin.
+
 
 #Experimental approaches: Buzz pollination
 -----
@@ -62,7 +64,9 @@ You can donload Audacity 2.1.2 from: [http://www.audacityteam.org](http://www.au
 2. Import audio file (e.g. 'test.wav')
 3. Clicking the space bar will start playing the audio file. To pause it press the space bar again.
 3. Once the file is open, click to the left of the **tracks** to select (highlight) the recording. This displays the recoding in **waveform**.
+
 	![image](ss-1.png)
+
 2.	Go to: Edit → Preferences → Spectrograms. Select: size 8192; type ‘Hamming’; maximum frequency 3000; grayscale.
 3.	Click the small upside-down black triangle to the right of the filename. Select ‘Spectrogram’. This will display the recording as a **spectrogram**.
 	![spectrogram](spectrogram-1.png)
@@ -102,7 +106,7 @@ To try this automatic recognition software, follow these steps:
 2. Navigate to Animal Sounds website [http://animal-sounds.ijs.si](http://animal-sounds.ijs.si)
 2. Navigate to *Bumblebees* and click *Recognize*
 3. Upload the sound file. The sounds recognistion will start automatically
-4. The result will we a list of candidate species as identified by the machine-learning algorithm in rank order.
+4. The result will be a list of candidate species as identified by the machine-learning algorithm in rank order.
 
 ```
 What are the advantages and limitations of this automatic recognition approach?
@@ -123,8 +127,8 @@ What are the advantages and limitations of this automatic recognition approach?
 5. Analyse your results by producing tables or figures of your main findings.
 
 
----
-###Glossary
+
+##Glossary
 
 * **Sonication:** A behaviour displayed by some insects, usually bees, that involves the production of high frequency vibrations to facilitate pollen collection.
 * **Buzz-pollination:** A type of pollination in which pollen transfer is mediated by insects that use high frequency vibrations to collect pollen grains. It usually, but not always, involves plant species with non-dehiscent anthers, including poricidal anthers.
