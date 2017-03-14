@@ -1,0 +1,63 @@
+---
+title: "Re-analysis Angert (2016)"
+author: "Mario Vallejo-Marin"
+date: "14/03/2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Background
+This exercise consists of a reanalysis of the datasets from Angert (2006).
+The data is provided as part of the `popbio` package.
+
+First load the library:
+
+```{r load popbio, echo=TRUE}
+library(popbio)
+```
+
+The dataset `monkeyflower` contains the transition rates of 32 populations of two *Mimulus* species, measured over multiple years. For an explanation of the transition rates see Angert (2006).
+
+Here are the first few lines of the data set:
+
+```{r monkeyflowerdata, echo=TRUE}
+#Because Rmarkdown knits from a different environment, you need so save the data set first and then read it here. This is not necessary if you are working from the console.
+#save(monkeyflower,file="monkeyflower.RData")
+load(file="monkeyflower.RData")
+head(monkeyflower)
+```
+The first three columns are species, site, and year. The data starting in the fourth column contains the transition rates.
+
+To read the data in matrix form you need to get columns 4 to 19 for a given row. For instance, the data for the first row (*M. cardinalis*, population Buckmeadows, year 2000):
+
+```{r mat1, echo=TRUE}
+m1<-matrix(as.numeric(monkeyflower[1,4:19]), byrow=T, nrow=4)
+m1
+```
+
+This produces a 4x4 matrix with 16 transition rates.
+
+And from this you can easily conduct the population matrix analyses. For example to get `lambda`:
+
+```{r lam1, echo=TRUE}
+lambda(m1)
+```
+##Analysis over multiple matrices
+
+Now you can do loops to analyse the properties of the 31 matrices at once.
+```{r loops, echo=T}
+temp.res<-data.frame(lambda=rep(NA,32), gentime=rep(NA,32))
+for(i in 1:32){
+  mattemp<-matrix(as.numeric(monkeyflower[i,4:19]), byrow=T, nrow=4)
+  temp.res[i,1]<-lambda(mattemp) 
+  temp.res[i,2]<- generation.time(mattemp)
+}
+par(mfrow=c(1,2))
+hist(temp.res$gentime, breaks=10, main="Generation time", xlab="Generation time")
+hist(temp.res$lambda, breaks=10, main="lambda", xlab="lambda")
+```
