@@ -1,4 +1,8 @@
-#Modeling population growth in clonal plants
+#Modeling population growth in clonal plants 
+Mario Vallejo-Marin
+
+**14 March 2017**
+
 ![imageUnalaska](una.jpg)
 
 Many plants combine sexual (seeds) and asexual (clonality, apomixis) modes of reproduction. In organisms with mixed modes of reproduction, we need a way to quantify the contribution of both seeds and clones to fitness.
