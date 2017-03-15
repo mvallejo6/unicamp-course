@@ -3,15 +3,17 @@ title: "Analysing the COMPADRE database using R"
 author: "Mario Vallejo-Marin"
 date: '`r format(Sys.time(), "%B %d %Y")`'
 output:
-  pdf_document:
-    fig_caption: yes
-    toc: yes
-    toc_depth: 3
+  md_document:
+    variant: markdown_github
   html_document:
     toc: yes
     toc_depth: 3
     word_document: default
   classoption: a4paper
+  pdf_document:
+    fig_caption: yes
+    toc: yes
+    toc_depth: 3
   word_document: default
 ---
 
