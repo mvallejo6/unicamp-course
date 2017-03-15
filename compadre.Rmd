@@ -1,0 +1,116 @@
+---
+title: "Analysing the COMPADRE database using R"
+author: "Mario Vallejo-Marin"
+date: '`r format(Sys.time(), "%B %d %Y")`'
+output:
+  pdf_document:
+    fig_caption: yes
+    toc: yes
+    toc_depth: 3
+  html_document:
+    toc: yes
+    toc_depth: 3
+    word_document: default
+  classoption: a4paper
+  word_document: default
+---
+
+#The COMPADRE database
+
+Is a compilation of plant population matrices. See [www.compadre-db.org](http://www.compadre-db.org). Currently it has 7,024 population matrices for thousands of species.
+
+##Downloading and reading the data in `R`
+
+You can download the data from the website. The database is in `R` format. Save it to your computer, within the working environment of R, so you can then load it and analyse it.
+
+```{r read.data, echo=T}
+load(file="COMPADRE_v.4.0.1.RData")
+```
+This will result in a database object called `compadre`. It is a big file of about 45Mb.
+
+The dataframe is arranged in a series of nested levels. At the highest level it has the following components:
+
+```{r structure, echo=T}
+summary(compadre)
+```
+The `metadata` section contains 47 variables. For a detailed description of the meaning of each of them see the user manual, which is available [here](https://github.com/jonesor/compadreDB/tree/master/COMPADRE-UserGuide).
+
+Accessing the elements of `compadre` can be done using the operator `$`, just as you would do to access the columns of a simple data base.
+
+```{r metadata, echo=T}
+names(compadre$metadata)
+```
+
+With a bit of tweaking you can interrogate the database to obtain specific information. For example, to find ou how many genera are included in the data base you can do:
+
+```{r numberofgenera, echo=T}
+length(levels(as.factor(compadre$metadata$Genus)))
+```
+
+And you can print the first ten genera in this list:
+
+```{r namesofgenera, echo=T}
+levels(as.factor(compadre$metadata$Genus))[1:10]
+```
+
+##Data analysis
+
+You can analyse subsets of the data using this general approach:
+
+```{r subsets, echo=T}
+#Subset the dataframe by Genus
+mimulus.data<-subset(compadre$metadata, Genus=="Mimulus")
+#Row numbers for the data containing Mimulus
+keep<-as.numeric(rownames(mimulus.data))
+#Subsets the matrices using the "keep" list
+mat.mimulus<-compadre$mat[keep]
+#This is a list of 36 matrices, which can be accessed using indices
+mat.mimulus[[1]]
+#And you can subset them further:
+mat.mimulus[[1]]$matC
+sum(mat.mimulus[[1]]$matC)
+```
+
+Now things more exciting, as we are ready to conduct analyses at a massive scale.
+
+```{r analyses-loops, echp=T}
+clonal.flag<-numeric()
+
+#Loop to identify which matC entries are >0; i.e., have some measure of clonality
+# Excludes indivisible matrices "NA"
+n<-length(compadre$metadata$SpeciesAuthor)
+
+for(i in 1:n){
+  sum.matC<-sum(compadre$mat[[i]]$matC)
+ # print(clonal.flag)
+  if(!is.na(sum.matC) & sum.matC > 0) {
+    clonal.flag<-c(clonal.flag,i)
+    #print(cbind(i, clonal.flag))
+    }
+}
+
+#List of species with matC > 0
+compadre$metadata$SpeciesAccepted[clonal.flag][1:10]
+length(compadre$metadata$SpeciesAccepted[clonal.flag])
+levels(as.factor(compadre$metadata$SpeciesAccepted[clonal.flag]))[1:10]
+```
+
+For example, to calculate lambda:
+
+```{r clonallambda, echo=T}
+#Calculate lambda for all clonal species:
+require(popbio)
+
+
+n<-length(compadre$metadata$SpeciesAccepted[clonal.flag])
+lambda.A<-rep(NA,n)
+
+for(i in 1:n){
+  tryCatch({  #Avoids error message due to missing values in x
+  lambda.A[i]<-lambda(compadre$mat[[i]]$matA)
+  }, error=function(e){})
+}
+sort(round(lambda.A,3))
+hist(lambda.A, breaks="fd", xlim=c(0,7), col="black") #Omits from the plot all values of lambda>7
+
+```

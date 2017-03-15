@@ -1,15 +1,63 @@
 ---
 title: "Population Projection Matrix Models in R"
 author: "Mario Vallejo-Marin"
-date: "14/03/2017"
-output: html_document
+date: '`r format(Sys.time(), "%B %d %Y")`'
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    word_document: default
+  classoption: a4paper
+  pdf_document:
+    fig_caption: yes
+    toc: yes
+    toc_depth: 3
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = F)
 ```
+#Modeling population growth in clonal plants 
 
-### Building a projection matrix
+![*Population of *Mimulus guttatus* in Unalaska, Aleutian Islands*](una.jpg)
+
+Many plants combine sexual (seeds) and asexual (clonality, apomixis) modes of reproduction. In organisms with mixed modes of reproduction, we need a way to quantify the contribution of both seeds and clones to fitness.
+
+Here we will se how we can use estimates of population growth as a measure of fitness. We will analyse demographic models to project the rate of growth of a population (or a group of individuals with similar characteristics).
+
+#Primer on building demographic models
+*Morris, W.F. and Doak, D.F., 2002. [Quantitative Conservation Biology](https://www.sinauer.com/quantitative-conservation-biology-theory-and-practice-of-population-viability-analysis.html). Sinauer, Sunderland, Massachusetts, USA.*
+
+Populations in which individuals differ in their contribution to population growth are called **structured populations**. The growth of structured populations is studied using **population projection matrix** models. These models divide the population into discrete classes of individuals, and estimates the contribution of each class to the number of individuals in all classes in the following census. The classes of individuals can be defined by their age, size, or stage.
+
+Individuals within a structured population can differ in three types of demographic processes:
+
+1. Survivorship
+2. Growth (transition from one stage to another)
+3. Fertility, or number of offspring (propagules) contributed to the next census
+
+These are called **vital rates**.
+
+A projection matrix model allows estimating how differences in vital rates, together with the proportion of individuals in each class, affects population growth.
+
+###1. Conducting a demographic study
+This is the first step in building a projection matrix. It requires following marked individuals over consecutive censuses (and ideally over multiple censuses). Following the fate of these marked individuals then allows estimating the vital rates required for a projection matrix model.
+
+This is a key step, as all the other analyses rest in getting good demographic data. Individuals studied should be representative of the population. The marked individuals should be sampled at regular intervals (e.g., over a one-year interval). In some cases, it may be necessary to census individuals more than once a year. For example, we may want to distinguish summer and winter survival).
+
+###2. Establishing classes of individuals
+One must decide whether to classify individuals by age, size or stage. You can also combine them (1-year old seedling, 2-year old seedling). The classification depends on biological information about the organism (e.g., does it make more sense to classify plants by age or size?), and practicality. Alternatively, you can use statistical analyses to identify state variables that best predict differences in vital rates among individuals (see page 187 of M&D2002).
+
+###3. Estimating vital rates
+Vital rates (survivorship, growth or transition rates, and fertility) are calculated by following the fate of individuals from one census to the next. Vital rates can be calculated by directly comparing numbers of individuals in two censuses, or by using regression models.
+
+###4. Building a projection matrix
+In this step you use the class-specific vital rates obtained from the demographic model to build a projection matrix.
+
+For this, we will use the `R` package `popbio`.
+
+# Building a projection matrix
 
 Once you have calculated the demographic rates of **survival**, **growth or transition rates**, and **fertility**, you can build a projection matrix.
 
@@ -43,7 +91,7 @@ To build the matrix you need to combine the vital rates to generate each matrix 
   - $f_j$ is the fertility rate for class $j$
    - $g_{ij}$ is the probability that an individual in class $j$ in this census makes the transition to class $i$
 
-###An example with clonal *Mimulus*
+#An example with clonal *Mimulus*
 Here we will use a recent example of estimating population growth rate in *Mimulus* populations reproducting both sexually and clonally. This study was conducted by Megan Peterson and colleagues:
 
 [Peterson ML, Kay KM, Angert AL (2016) The scale of local adaptation in *Mimulus guttatus*: comparing life history races, ecotypes, and populations. *New Phytologist*, 211, 345–356.](Peterson_et_al_2016.pdf)
@@ -52,9 +100,7 @@ Here we will use a recent example of estimating population growth rate in *Mimul
 
 The general life cycle of *Mimulus* is shown here:
 
-![life cycle graph](life-cycle.png) 
-
-**Figure**. Life cycle graph of *Mimulus*. Black arrows indicate transitions for annuals, and grey+black are transitions for perennials. From Peterson et al. (2016). 
+![*Life cycle graph of *Mimulus*. Black arrows indicate transitions for annuals, and grey+black are transitions for perennials. From Peterson et al. (2016).* \label{lifecyclegraph}](life-cycle.png) 
 
 The vital rates for the life cycle graph are given below.
 
@@ -81,7 +127,7 @@ Rosette_{t+1} & 0 & 0 & 0
 \end{array}
 $$
 
-###Analysis with *POPBIO*
+#Analysis with *POPBIO*
 
 Here we will use the `library(popbio)` to analyse population projection models. *popbio* is an package that implements the equations from Caswell (2001), and Morris and Doak (2002) to study matrix populations models.
 
@@ -287,7 +333,7 @@ barplot(t(sens.em)[3,], ylab="Elasticity", xlab="Vital rates", main="Elasticity 
 
 You can see that the elasticity of `R` is similar to those of other parameters. The exception is germination rate `G` which seems to contribute proportionally less to population growth rate.
 
-##Exercises
+#Exercises
 
 1. Calculate lambda for the six populations 
 2. Compare lambda for annual (non-clonal) and perennial (clonal) populations
