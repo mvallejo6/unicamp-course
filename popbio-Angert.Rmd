@@ -3,8 +3,10 @@ title: "Re-analysis Angert (2016)"
 author: "Mario Vallejo-Marin"
 date: "14/03/2017"
 output:
-  pdf_document: default
+  md_document:
+    variant: markdown_github
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
