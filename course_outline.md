@@ -78,18 +78,18 @@ The course will be delivered through a mix of lectures, discussion groups, data 
 
 # Bibliography
 
-1 De Luca, P. A. &amp; Vallejo-Marín, M. What&#39;s the &#39;buzz&#39;about? The ecology and evolutionary significance of buzz-pollination. _Current opinion in plant biology_ **16** , 429-435 (2013).
+1. De Luca, P. A. &amp; Vallejo-Marín, M. What&#39;s the &#39;buzz&#39;about? The ecology and evolutionary significance of buzz-pollination. _Current opinion in plant biology_ **16** , 429-435 (2013).
 
-2 Buchmann, S. L. in _Handbook of Experimental Pollination Biology_   (eds C. E. Jones &amp; R. J. Little)  73-113 (Scientific and Academic Editions, 1983).
+2. Buchmann, S. L. in _Handbook of Experimental Pollination Biology_   (eds C. E. Jones &amp; R. J. Little)  73-113 (Scientific and Academic Editions, 1983).
 
-3 Harder, L. D. &amp; Barclay, R. M. R. The functional significance of poricidal anthers and buzz pollination: Controlled pollen removal from Dodecatheon. _Functional Ecology_ **8** , 509-517 (1994).
+3. Harder, L. D. &amp; Barclay, R. M. R. The functional significance of poricidal anthers and buzz pollination: Controlled pollen removal from Dodecatheon. _Functional Ecology_ **8** , 509-517 (1994).
 
-4 Vallejo-Marin, M., Dorken, M. E. &amp; Barrett, S. C. H. The Ecological and Evolutionary Consequences of Clonality for Plant Mating. _Annual Review of Ecology Evolution and Systematics_ **41** , 193-213, doi:10.1146/annurev.ecolsys.110308.120258 (2010).
+4. Vallejo-Marin, M., Dorken, M. E. &amp; Barrett, S. C. H. The Ecological and Evolutionary Consequences of Clonality for Plant Mating. _Annual Review of Ecology Evolution and Systematics_ **41** , 193-213, doi:10.1146/annurev.ecolsys.110308.120258 (2010).
 
-5 Pan, J. J. &amp; Price, J. S. Fitness and evolution in clonal plants: the impact of clonal growth. _Evolutionary Ecology_ **15** , 583-600 (2001).
+5. Pan, J. J. &amp; Price, J. S. Fitness and evolution in clonal plants: the impact of clonal growth. _Evolutionary Ecology_ **15** , 583-600 (2001).
 
-6 Peterson, M. L., Kay, K. M. &amp; Angert, A. L. The scale of local adaptation in Mimulus guttatus: comparing life history races, ecotypes, and populations. _New Phytol_ **211** , 345-356, doi:10.1111/nph.13971 (2016).
+6. Peterson, M. L., Kay, K. M. &amp; Angert, A. L. The scale of local adaptation in Mimulus guttatus: comparing life history races, ecotypes, and populations. _New Phytol_ **211** , 345-356, doi:10.1111/nph.13971 (2016).
 
-7 Jones, A. G., Small, C. M., Paczolt, K. A. &amp; Ratterman, N. L. A practical guide to methods of parentage analysis. _Mol Ecol Resour_ **10** , 6-30, doi:10.1111/j.1755-0998.2009.02778.x (2010).
+7. Jones, A. G., Small, C. M., Paczolt, K. A. &amp; Ratterman, N. L. A practical guide to methods of parentage analysis. _Mol Ecol Resour_ **10** , 6-30, doi:10.1111/j.1755-0998.2009.02778.x (2010).
 
-8 Jones, A. G. &amp; Ardren, W. R. Methods of parentage analysis in natural populations. _Mol Ecol_ **12** , 2511-2523 (2003).
+8. Jones, A. G. &amp; Ardren, W. R. Methods of parentage analysis in natural populations. _Mol Ecol_ **12** , 2511-2523 (2003).
