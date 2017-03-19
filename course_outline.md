@@ -12,20 +12,20 @@ The goal of this course is to provide students with a general overview and basic
 
 The course will be delivered through a mix of lectures, discussion groups, data collection in the field, and computer exercises.
 
-1. **Experimental approaches: A case study with buzz-pollination**
+### I. **Experimental approaches: A case study with buzz-pollination**
 
   1. Floral adaptations to buzz-pollination
   2. Pollinator behaviour and learning
   3. Analysis of vibrations
 
-2. **Sexual vs. asexual strategies**
+### II. **Sexual vs. asexual strategies**
 
   1. Reproductive allocation trade-offs
   2. Asexual strategies: What is fitness and how to measure it?
   3. Challenges to measure fitness in perennial, clonal plants
   4. Life-table response experiments
 
-3. **Estimating reproductive success via male function**
+### III. **Estimating reproductive success via male function**
 
   1. Indirect approaches: pollen dyes, flower number
   2. Genetic approaches: phenotypic markers,
