@@ -1,11 +1,11 @@
-###Unicamp Course. 20-22 March 2017 
+### Unicamp Course. 20-22 March 2017 
 ### Mario Vallejo-Marin.
 
 
-#Experimental approaches: Buzz pollination
+# Experimental approaches: Buzz pollination
 -----
 
-##Introduction
+## Introduction
 
 **Buzz pollination** is a mode of pollination that involves insects, usually bees, using high frequency vibrations to remove pollen from flowers. 
 
@@ -16,7 +16,7 @@ Most insects capable of buzz pollination are bees. Bees use their thoracic fligh
 
 Buzz-pollination is often used to refere to the phenomenon of producing vibrations to extract pollen from flowers. However, 'pollination' implies the transfer of pollen between anthers and stigmas, so it is useful to differentiate the process of producing vibrations (sonication), and the reproductive consequences for the plant (pollination). See glossary below.
 
-##Analysis of vibrations
+## Analysis of vibrations
 Studies of buzz pollination often require characterising the types of vibrations produced by bees while extracting pollen.
 
 Vibrations can be experimentally studied in two ways:
@@ -25,7 +25,7 @@ Vibrations can be experimentally studied in two ways:
 
 2. **Indirect approaches.** Involve analysing the byproduct of the vibrations produced by the bee. The vibrations produced by the bee and transmitted to the flower, result in an audible signal: the "buzz" in buzz-pollination. This acoustic signal can be recorded and analysed using an audio recorder. The advantage of recording the acoustic signal produced during **sonication** is that this can be done with relatively simple equipment (your mobile phone may give you a good first approximation to the characteristics of a buzz). The disadvantages include the intrusion of background noise (from wind to bird calls), which can render a recording useless. Additionally, some parameters of the buzz, such as intensity or amplitude are heavily affected by the distance between the recording apparatus and the bee, and hence it is difficult to get accurate measurements of buzz intensity under field conditions.
 
-#Acoustic analysis of buzz pollination
+# Acoustic analysis of buzz pollination
 
 The vibrations produced by the bee, are propagated through the air, producing audible sounds. These sounds are our indirect way to characterise the vibrations produced by the bee. Sounds are waves that propagate through the air or other media. The main charactersitics of waves are:
 
@@ -55,10 +55,10 @@ Here we will use a freely available software called *Audacity*.
 
 **The goal of this exercise is to give you a brief tutorial for analysing bee buzzes, and characterise their basic properties.**
 
-###1.1 Download and install *Audacity* in your computer
+### 1.1 Download and install *Audacity* in your computer
 You can donload Audacity 2.1.2 from: [http://www.audacityteam.org](http://www.audacityteam.org)
 
-###1.2 Adjust *Audacity* settings
+### 1.2 Adjust *Audacity* settings
 
 1. Open *Audacity*
 2. Import audio file (e.g. 'test.wav')
@@ -73,7 +73,7 @@ You can donload Audacity 2.1.2 from: [http://www.audacityteam.org](http://www.au
 4.	Go to: Effect → High Pass Filter. Select: rolloff 12 db; cutoff 100 Hz. If you are working on a MAC you may have to follow a different path to adjust these settings.
 5. If your audio was recorded in stereo (e.g., with the H4 Zoom Recorder) you will see the two channels of the audio. To simplify things we will analyse only one channel. To do this, go to the inverted black triangle to the right of the file name, choose *Split Stero to Mono*, and then close the bottom panel. You can stretch out the Spectrogram area using the mouse to fill your screen.
 
-###1.3 Analysis
+### 1.3 Analysis
 Now that you have the audio file in a format that we can analyse, the next step is to select a section of the file that contains a clear buzz (e.g., a flight buzz or a feeding sonication). You should conduct the analyses below separately for each buzz. For each separate buzz, carry out the following steps.
 
 1.	Highlight the buzz using the mouse. Make sure to include only the buzz you want to analyse, and use the zoom function if needed for increased accuracy. 
@@ -90,7 +90,7 @@ Now that you have the audio file in a format that we can analyse, the next step 
 ![flight](sonication-1.png)
 **Figure.** Example of a sonication buzz.
 
-##2. Machine learning
+## 2. Machine learning
 
 In 2015, a Slovenian data scientist [Bostjan Kalusza](http://bostjankaluza.net/classifying-animal-sounds/) and his colleagues, developed a new approach at analysing buzzing sounds. They used machine learning techniques to train a computer program to recognise some of the main European species of bumblebees. The paper can be found [here](http://www.tandfonline.com/doi/abs/10.1080/09524622.2016.1190946).
 
@@ -115,7 +115,7 @@ Is this a useful tool for assessing levels of biodiversity?
 What are the advantages and limitations of this automatic recognition approach?
 ```
 
-#Assignment
+# Assignment
 
 **Objective:** To build a library of flight and feeding buzzes, and analyse the types of vibrations produced by different bee species.
 
@@ -128,7 +128,7 @@ What are the advantages and limitations of this automatic recognition approach?
 
 
 
-##Glossary
+## Glossary
 
 * **Sonication:** A behaviour displayed by some insects, usually bees, that involves the production of high frequency vibrations to facilitate pollen collection.
 * **Buzz-pollination:** A type of pollination in which pollen transfer is mediated by insects that use high frequency vibrations to collect pollen grains. It usually, but not always, involves plant species with non-dehiscent anthers, including poricidal anthers.
