@@ -1,10 +1,10 @@
-#Preliminary notes
+# Preliminary notes
 
 **20 February, 2017**
 
 Notes for using *Markdown*, *pandoc*, *Git*, *GitHub*.
 
-##Create documents using Markdown
+## Create documents using Markdown
 
 1. Create *Markdown* text document with extension `.md`. This can be done in a text editor (terminal) or in a program such as [MacDown](https://macdown.uranusjr.com)
 2. An `.md` document will be automatically rendered as html in GitHub. 
@@ -20,7 +20,7 @@ And to get a Word document:
 `pandoc --from markdown --to docx buzz-pollination.md --output buzz2.docx`
 
 
-##Creating and working with repository in GitHub
+## Creating and working with repository in GitHub
 
 You can start by creating a new repository in GitHub. This is the easiest.
 You can also create a repository directly in the terminal and then uploading it to GitHub.
