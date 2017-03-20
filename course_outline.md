@@ -74,8 +74,6 @@ The course will be delivered through a mix of lectures, discussion groups, data 
 | 4:00pm | **Round table: Future challenges to measure plant paternity** |   | _Computer, internet access_ |
 | 5:00pm | **(Optional) Reproducible research: Primer on using**  **RMarkdown** | Using the program _RStudio_ to generate **RMarkdown** documents | _Computer, RStudio_ |
 
-
-
 # Bibliography
 
 1. De Luca, P. A. &amp; Vallejo-Marín, M. What&#39;s the &#39;buzz&#39;about? The ecology and evolutionary significance of buzz-pollination. _Current opinion in plant biology_ **16** , 429-435 (2013).
