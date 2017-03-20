@@ -59,7 +59,7 @@ The course will be delivered through a mix of lectures, discussion groups, data 
 | 2:00pm | **Practical: Estimating clonal fitness** | Case study using clonal monkeyflowers | _Computer with: R, RStudio, popbio_  |
 |   |   | Using the program _popbio_ |   |
 | 4:00pm | **Group miniproject** | Analysis of demography using COMPADRELiterature review of measuring fitness in clonal plants | _Computer with R, internet access._ |
-| 5:00pm | **(Optional) Using**  **R**** , **** RStudio** | Using _RStudio_ to organise statistical analyses in _R_ | _Computer, RStudio_ |
+| 5:00pm | **(Optional) Using  *R*, RStudio** | Using _RStudio_ to organise statistical analyses in _R_ | _Computer, RStudio_ |
 
 | Wednesday 22th March | Estimating male fitness |   | _You need:_ |
 | --- | --- | --- | --- |
