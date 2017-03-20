@@ -41,11 +41,11 @@ The course will be delivered through a mix of lectures, discussion groups, data 
 | --- | --- | --- | --- |
 | 9:00am | **Lecture: Buzz-pollination** | Introduction |   |
 |   |   | Methods (theory) |   |
-| 10:00am | **Computer practical** | Using Audacity | _Computer with Audacity installed_ |
+| 10:00am | **Field exercise** | Collect bee buzzes | _Audio recorder; plastic vials, entomological net, field notes_ |
+| 12:00pm | **Lunch break** |   |   |
+| 2:00pm | **Computer practical** | Using Audacity | _Computer with Audacity installed_ |
 |   |   | Machine Learning | _Practical Handouts_ |
-| 11:00am | **Field exercise** | Collect bee buzzes | _Audio recorder; plastic vials, entomological net, field notes_ |
-|   |   | Analyse buzzes using Audacity | _Computer_ |
-| 2:00pm | **Lunch break** |   |   |
+|   |   | Analyse buzzes using Audacity | |
 | 4:00pm | **Paper discussion** | Bee learning. Morgan et al. (2016) | _Read paper in advance_ |
 | 5:00pm | **Round table discussion** | What is learning?How to experimentally study pollinator learning? | _Background reading on insect learning would recommended._ |
 
@@ -55,9 +55,9 @@ The course will be delivered through a mix of lectures, discussion groups, data 
 |   |   | Effect of clonality on sexual strategies |   |
 | 10:00am | **Paper discussion** | Fitness in clonal organisms. Pan and Price (2001) | _Read paper in advance_ |
 | 11:00am | **Lecture: Demographic approaches to fitness** | Measuring fitness in clonal plants using population matrices |   |
-| 1:00pm | **Practical: Estimating clonal fi**** tness** | Case study using clonal monkeyflowers | _Computer with: R, RStudio, popbio_  |
+| 12:00pm | **Lunch break** |   |   |
+| 2:00pm | **Practical: Estimating clonal fitness** | Case study using clonal monkeyflowers | _Computer with: R, RStudio, popbio_  |
 |   |   | Using the program _popbio_ |   |
-| 2:00pm | **Lunch break** |   |   |
 | 4:00pm | **Group miniproject** | Analysis of demography using COMPADRELiterature review of measuring fitness in clonal plants | _Computer with R, internet access._ |
 | 5:00pm | **(Optional) Using**  **R**** , **** RStudio** | Using _RStudio_ to organise statistical analyses in _R_ | _Computer, RStudio_ |
 
@@ -65,11 +65,11 @@ The course will be delivered through a mix of lectures, discussion groups, data 
 | --- | --- | --- | --- |
 | 9:00am | **Lecture: Fitness in hermaphrodites, mating system** | Introduction |   |
 |   |   | Estimating outcrossing rates |   |
-| 10:00am | **Lecture: Estimating paternity** | Parentage analysis |   |
-|   |   | Maximum likelihood and Bayesian approaches |   |
-| 11:00am | **Field exercise: Pollen flow using dyes** | Use dyes to distinguish self- vs. cross-pollen | _Fluorescent dyes (provided), UV lamp (provided), entomological net, dissecting microscope, plastic vials, ice, ice-container. Flowers, bees, flies._ |
+| 10:00am | **Field exercise: Pollen flow using dyes** | Use dyes to distinguish self- vs. cross-pollen | _Fluorescent dyes (provided), UV lamp (provided), entomological net, dissecting microscope, plastic vials, ice, ice-container. Flowers, bees, flies._ |
 |   |   | Use dyes to detect safe-sites on pollinators bodies |   |
-| 2:00pm | **Lunch break** |   |   |
+| 12:00pm | **Lunch break** |   |   |
+| 2:00pm | **Lecture: Estimating paternity** | Parentage analysis |   |
+|   |   | Maximum likelihood and Bayesian approaches |   |
 | 3:00pm | **Paper discussion** | Parentage analysis. Jones et al. (2009) | _Read paper in advance_ |
 | 4:00pm | **Round table: Future challenges to measure plant paternity** |   | _Computer, internet access_ |
 | 5:00pm | **(Optional) Reproducible research: Primer on using**  **RMarkdown** | Using the program _RStudio_ to generate **RMarkdown** documents | _Computer, RStudio_ |
