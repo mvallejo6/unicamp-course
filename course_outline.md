@@ -47,7 +47,7 @@ The course will be delivered through a mix of lectures, discussion groups, data 
 |   |   | Machine Learning | _Practical Handouts_ |
 |   |   | Analyse buzzes using Audacity | |
 | 4:00pm | **Paper discussion** | Bee learning. Morgan et al. (2016) | _Read paper in advance_ |
-| 5:00pm | **Round table discussion** | What is learning?How to experimentally study pollinator learning? | _Background reading on insect learning would recommended._ |
+| 5:00pm | **Round table discussion** | What is learning?How to experimentally study pollinator learning? | _Background reading on insect learning recommended._ |
 
 | Tuesday 21th March | Fitness in clonal plants |   | _You need:_ |
 | --- | --- | --- | --- |
